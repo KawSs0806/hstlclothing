@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đây là web test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<!-- style -->
+	<link rel="stylesheet" type="text/css" href="styles/solax.css">
+
+	<!-- owlcarousel -->
+	<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css"> 
+	<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+	<!-- css bootstrap 4 -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		/*========================reset CSS=======================*/		/*--------(khuyên dùng)-------------*/
+		*{
+			margin: 0;
+			padding: 0;
+		}	
+
+		/*===========================start nav-bar=============================*/
+		.nav-bar{
+			background-color: #000000;
+			padding-left: 0%;
+		}
+
+		#navbar-collapse-main li{
+			list-style-type: none;
+			/*color: #ffffff;*/
+			font-size: 20px;
+			position: relative;	
+			display: inline-block;
+			width: 120px;
+			height: 30px;
+			line-height: 30px;		
+		}
+
+		#navbar-collapse-main li a{
+			color: #ffffff;
+			font-family: sans-serif;
+			font-size: 13px;
+			display: block;
+			text-align: center;
+		}
+
+		#navbar-collapse-main li a:hover{
+			background-color: #ffffff;
+			color: red;
+			text-decoration: none;
+		}
+
+		#navbar-collapse-main li #sub-manunf{
+			display: none;
+			position: absolute;
+			color: #000000;
+		}
+
+		#navbar-collapse-main li:hover #sub-manunf{
+			display: block;
+			background-color: #e68a00;
+		}
+
+		#navbar-collapse-main li #sub-search{
+			display: none;
+			position: absolute;
+		}
+
+		#navbar-collapse-main li:hover #sub-search{
+			display: block;
+		}
+
+		.active{
+			background: #e68a00;
+		}
+
+		/*===============================end nav-bar==============================*/
+
+		.logo{
+			background-color: black;
+			text-align: center;
+		}
+
+		/*================================start main=============================*/
+
+
+
+		/*=================================end main==================================*/
+
+
+
+		/*=================================start footer=============================*/
+
+		.footer{
+			background-color: #000000;
+			display: flex;
+		}
+
+		.footer img{
+			width: 200px;
+			height: 100px;
+			padding-right: 40px;
+		}
+
+		.footer h1{
+			color: #e68a00;
+		}
+
+		.contact{
+			padding-right: 300px;
+		}
+
+		.scontact{
+			margin: 0;
+			padding: 0;
+		}
+
+		.scontact li{
+			font-size: 40px;
+			list-style: none;
+			padding-left: 20px;
+		}
+
+		.scontact li a{
+			color: #ffffff;
+			font-size: 20px;
+			text-decoration: none;
+		}
+
+		.scontact li a:hover{
+			color: #e68a00;
+		}
+
+		.policy{
+			padding-right: 400px;
+		}
+
+		.policy a{
+			text-decoration: none;
+			color: #ffffff;
+			font-size: 16px;
+		}
+
+		.policy a:hover{
+			color: #e68a00;
+		}
+
+		.address i{
+			color: #ffffff;
+			font-size: 16px;
+		}
+
+		.copyright{
+			text-align: center;
+			color: #ffffff;
+			background-color: black;
+			font-size: 16px;
+			height: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="nav-bar">
+		<div class="container-fluid">
+
+<!---------------------------------------MENU--------------------------------------------------->
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-9">
+					<ul class="nav nav-bar navbar-right" id="navbar-collapse-main">
+						<li><a class="active" href="index.html"><span><i class="fas fa-home mr-1"></i></span>Trang Chủ</a></li>
+
+						<li>
+							<a href="#l"><span><i class="fas fa-search mr-1"></i></span>Tìm Kiếm</a>
+							<ul id="sub-search">
+								<li>
+									<input type="search" placeholder="Tìm kiếm..." style="width: 150px; height: 30px; color: #000000; font-size: 10px;">
+								</li>
+							</ul>
+						</li>
+
+						<li><a href="#"><span><i class="fas fa-tshirt mr-1"></i></span>Sản Phẩm</a>
+							<ul id="sub-manunf">
+								<li><a href="ao.html">Áo</a></li>
+								<li><a href="quan.html">Quần</a></li>
+								<li><a href="phukien.html">Phụ Kiện</a></li>
+								<li><a href="#">__________</a></li>
+							</ul>
+						</li>
+
+
+						<li>
+							<a href="cart.html"><span><i class="fas fa-cart-plus mr-1"></i></span>Giỏ Hàng</a>	
+						</li>
+						
+						<li><a href="sign.html"><span><i class="fas fa-users mr-1"></i></span>Đăng Nhập</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!----------------------------------LOGO--------------------------------->
+	<div class="logo">
+		<a href="index.html"><img src="images/logo.png"></a>
+	</div>
+	<br>
+
+<!--------------------------------------------MAIN------------------------------------------------>
+	<div class="container">
+
+		<div class="textmain" style="font-size: 20px;">
+			<p>Đối với khách hàng ở TP. Hồ Chí Minh hoặc mua hàng tại cửa hàng Sly Clothing tại TP. Hồ Chí Minh:</p>
+
+			<ul>
+				<li>Trong vòng 7 ngày kể từ ngày mua hàng (Theo thời gian ghi trong hoá đơn), quý khách được phép đổi size, hoặc tùy mẫu nếu còn Sản phẩm</li>
+				<li>Khi đến đổi, quý khách vui lòng mang theo sản phẩm trong tình trạng chưa qua sử dụng.</li>
+			</ul>
+
+			<p>Đối với khách hàng ở các tỉnh ngoài TP. Hà Nội hoặc mua hàng trên hệ thống Thương mại điện tử của HSTL Clothing bao gồm: Website, Facebook, Instagram</p>
+
+			<ul>
+				<li>Trong vòng 7 ngày kể từ ngày nhận hàng (Theo thời gian ghi trong hoá đơn, hoặc mã đơn hàng), quý khách được phép đổi size, đổi mẫu sau khi được Cửa hàng xác nhận.</li>
+				<li>Quý khách vui lòng thông báo trước về tình trạng sản phẩm, nguyên do đổi hàng qua inbox Fanpgage: facebook.com/hstl.hanoi hoặc Email: hstl.hn@gmail.com hoặc Hotline: 0902.798.994. Sau khi nhận được sự tư vấn và thống nhất mẫu đổi từ bộ phận Chăm sóc khách hàng, khách hàng vui lòng chuyển phát sản phẩm về địa chỉ 140/2 Đặng Văn Ngữ, P14, Quận Phú Nhuận, TP.HCM. Phần phí ship bên quý khách hàng vui lòng thanh toán 2 chiều đi lẫn chiều về nếu quý khách không ưng ý và mong muốn đổi size hoặc đổi mẫu khác</li>
+				<li>Trường hợp Sản phẩm lỗi do nhà sản xuất hoặc bên phía cửa hàng gửi nhầm Sản phẩm của Quý khách. SLY xin chịu hoàn toàn Phí Vận Chuyển để đảm bảo quý khách có một Sản phẩm tốt nhất.</li>
+			</ul>
+
+			<p>Lưu ý:</p>
+			<ul>
+				<li>Những sản phẩm đã qua sử dụng thì sẽ không áp dụng đổi trả.</li>
+				<li>Sản phẩm đã mua sẽ không được hoàn tiền dưới bất kỳ hình thức nào.</li>
+				<li>Các sản phẩm trong chương trình khuyến mãi, giảm giá vẫn áp dụng chính sách đổi hàng.</li>
+				<li>Điều kiện: Sản phẩm còn mới 100%</li>
+			</ul>
+
+			<p>HSTL sẽ không áp dụng hoàn tiền khi quý khách đổi Sản phẩm có giá trị thấp hơn.</p>
+			<p>Cảm ơn Quý Khách hàng đã tin tưởng và cho HSTL cơ hội được phục vụ Quý Khách!</p>
+		</div>
+	</div>
+
+
+
+<!----------------------------------------FOOTER----------------------------------->
+	<div class="footer">
+		<div>
+			<img src="images/logo.png">
+		</div>
+		<div class="contact">
+			<h1>Liên Hệ</h1>
+			<ul class="scontact">
+				<li>
+					<a href="https://www.facebook.com/nobisu.kunny/"><i class="fab fa-facebook-square mr-1"></i>HSTL Club</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/hstlvnvlub/"><i class="fab fa-instagram mr-1"></i>hstlvnclub</a>
+				</li>
+				<li>
+					<a href=""><i class="fas fa-phone-square-alt mr-1"></i>098988888</a>
+				</li>
+			</ul>
+		</div>
+		<div class="policy">
+			<h1>Chính Sách</h1>
+			<a href="#">Chính Sách Bảo Hành</a><br>
+			<a href="baomat.html">Chính Sách Bảo Mật</a><br>
+			<a href="member.html">Hệ Thống Member</a><br>
+			<a href="baoquan.html">Hướng Dẫn Bảo Quản</a>
+		</div>
+		<div class="address">
+			<h1>Địa Chỉ</h1>
+			<i class="fas fa-map-market-alt mr-1">HN: 792 Đường Láng - Dist.Đống Đa</i><br>
+			<i class="fas fa-map-market-alt mr-1">SG: 190a Huỳnh Văn Bánh - Dist. Phú Nhuận</i><br>
+			<i class="fas fa-map-market-alt mr-1">CT: 15 Nguyễn Việt Hồng, Q. Ninh Kiều</i><br>
+			<i class="fas fa-map-market-alt mr-1">ĐN: 126 Lê Duẩn, Q. Hải Châu</i><br>
+		</div>
+	</div>
+	<div class="copyright">
+		<p style="color: #333">Copyright © 2020 HSTL. All rights reserved.</p>
+	</div>
+</body>
+</html>

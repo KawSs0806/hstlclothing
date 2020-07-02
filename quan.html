@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đây là web test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<!-- style -->
+	<link rel="stylesheet" type="text/css" href="styles/solax.css">
+
+	<!-- owlcarousel -->
+	<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css"> 
+	<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+	<!-- css bootstrap 4 -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		/*========================reset CSS=======================*/		/*--------(khuyên dùng)-------------*/
+		*{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}	
+
+		/*===========================start nav-bar=============================*/
+		.nav-bar{
+			background-color: #000000;
+			padding-left: 0%;
+		}
+
+		#navbar-collapse-main li{
+			list-style-type: none;
+			/*color: #ffffff;*/
+			font-size: 20px;
+			position: relative;	
+			display: inline-block;
+			width: 120px;
+			height: 30px;
+			line-height: 30px;		
+		}
+
+		#navbar-collapse-main li a{
+			color: #ffffff;
+			font-family: sans-serif;
+			font-size: 13px;
+			display: block;
+			text-align: center;
+		}
+
+		#navbar-collapse-main li a:hover{
+			background-color: #ffffff;
+			color: red;
+			text-decoration: none;
+		}
+
+		#navbar-collapse-main li #sub-manunf{
+			display: none;
+			position: absolute;
+			color: #000000;
+		}
+
+		#navbar-collapse-main li:hover #sub-manunf{
+			display: block;
+			background-color: #e68a00;
+		}
+
+		#navbar-collapse-main li #sub-search{
+			display: none;
+			position: absolute;
+		}
+
+		#navbar-collapse-main li:hover #sub-search{
+			display: block;
+		}
+
+		.active{
+			background: #e68a00;
+		}
+
+		/*===============================end nav-bar==============================*/
+
+		.logo{
+			background-color: black;
+		}
+
+		/*================================start main=============================*/
+
+		.smain{
+			margin: 0;
+			padding: 0;
+
+		}
+
+		.smain li{
+			list-style: none;
+			float: left;
+		}
+
+		.smain li img{
+			width: 280px;
+			height: 250px;
+			padding: 40px 20px 0px 20px;
+		}
+
+		.smain li img:hover{
+			transform: scale(1.1);
+			transition: all ease-in-out 0.6s;
+		}
+
+		.smain li a{
+			color: #000;
+			text-decoration: none;
+		}
+
+		.smain li a:hover{
+			color: #e68a00;
+		}
+	
+		.smain p{
+			font-size: 17px;
+		}
+
+		/*=================================end main==================================*/
+
+
+
+		/*=================================start footer=============================*/
+
+		.footer{
+			background-color: #000000;
+			display: flex;
+		}
+
+		.footer img{
+			width: 200px;
+			height: 100px;
+			padding-right: 40px;
+		}
+
+		.footer h1{
+			color: #e68a00;
+		}
+
+		.contact{
+			padding-right: 300px;
+		}
+
+		.scontact{
+			margin: 0;
+			padding: 0;
+		}
+
+		.scontact li{
+			font-size: 40px;
+			list-style: none;
+			padding-left: 20px;
+		}
+
+		.scontact li a{
+			color: #ffffff;
+			font-size: 20px;
+			text-decoration: none;
+		}
+
+		.scontact li a:hover{
+			color: #e68a00;
+		}
+
+		.policy{
+			padding-right: 400px;
+		}
+
+		.policy a{
+			text-decoration: none;
+			color: #ffffff;
+			font-size: 16px;
+		}
+
+		.policy a:hover{
+			color: #e68a00;
+		}
+
+		.address i{
+			color: #ffffff;
+			font-size: 16px;
+		}
+
+		.copyright{
+			text-align: center;
+			color: #ffffff;
+			background-color: black;
+			font-size: 16px;
+			height: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="nav-bar">
+		<div class="container-fluid">
+
+<!---------------------------------------MENU--------------------------------------------------->
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-9">
+					<ul class="nav nav-bar navbar-right" id="navbar-collapse-main">
+						<li><a class="active" href="index.html"><span><i class="fas fa-home mr-1"></i></span>Trang Chủ</a></li>
+
+						<li>
+							<a href="#"><span><i class="fas fa-search mr-1"></i></span>Tìm Kiếm</a>
+							<ul id="sub-search">
+								<li>
+									<input type="search" placeholder="Tìm kiếm..." style="width: 150px; height: 30px; color: #000000; font-size: 10px;">
+								</li>
+							</ul>
+						</li>
+
+						<li><a href="#"><span><i class="fas fa-tshirt mr-1"></i></span>Sản Phẩm</a>
+							<ul id="sub-manunf">
+								<li><a href="ao.html">Áo</a></li>
+								<li><a href="quan.html">Quần</a></li>
+								<li><a href="phukien.html">Phụ Kiện</a></li>
+								<li><a href="#">__________</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="cart.html"><span><i class="fas fa-cart-plus mr-1"></i></span>Giỏ Hàng</a>	
+						</li>
+						
+						<li><a href="sign.html"><span><i class="fas fa-users mr-1"></i></span>Đăng Nhập</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!----------------------------------LOGO--------------------------------->
+	<div class="logo">
+		<a href="index.html"><img src="images/logo.png"></a>
+	</div>
+
+
+<!--------------------------------------------MAIN------------------------------------------------>
+	<div class="container">
+			<img src="images/carousel.png" width="1100px" height="400px">
+			<b style="padding: 50px; font-size: 30px;">_______________QUẦN_______________</b>
+		<div class="main">
+			<div class="row">
+				<ul class="smain">
+					<li>
+						<a href=""><img src="images/cargo-pant-tan.png" alt="cargo-pant-tan"></a>
+						<a href=""><h2><b>Cargo Pant Tan</b></h2></a>
+						<p>320.000đ</p>
+					</li>
+					<li>
+						<a href=""><img src="images/line-green-pant.png" alt="line-green-pant"></a>
+						<a href=""><h2><b>Line Green Pant</b></h2></a>
+						<p>350.000đ</p>
+					</li>
+					<li>
+						<a href=""><img src="images/line-orange-pant.png" alt="line-orange-pant"></a>
+						<a href=""><h2><b>Line Orange Pant</b></h2></a>
+						<p>320.000đ</p>
+					</li>
+					<li>
+						<a href=""><img src="images/line-white-blue-pant.png" alt="line-white-blue-pant"></a>
+						<a href=""><h2><b>Line White Blue Pant</b></h2></a>
+						<p>350.000đ</p>
+					</li>
+					<li><a href=""><img src="images/line-white-pant.png" alt="line-white-pant"></a>
+						<a href=""><h2><b>Line White Pant</b></h2></a>
+						<p>350.000đ</p>
+					</li>
+					<li>
+						<a href=""><img src="images/line-white-red-pant.png" alt="line-white-red-pant"></a>
+						<a href=""><h2><b>Line White Red Pant</b></h2></a>
+						<p>350.000đ</p>
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+<!----------------------------------------FOOTER----------------------------------->
+	<div class="footer">
+		<div>
+			<img src="images/logo.png">
+		</div>
+		<div class="contact">
+			<h1>Liên Hệ</h1>
+			<ul class="scontact">
+				<li>
+					<a href="https://www.facebook.com/nobisu.kunny/"><i class="fab fa-facebook-square mr-1"></i>HSTL Club</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/hstlvnvlub/"><i class="fab fa-instagram mr-1"></i>hstlvnclub</a>
+				</li>
+				<li>
+					<a href=""><i class="fas fa-phone-square-alt mr-1"></i>098988888</a>
+				</li>
+			</ul>
+		</div>
+		<div class="policy">
+			<h1>Chính Sách</h1>
+			<a href="">Chính Sách Bảo Hành</a><br>
+			<a href="">Hỗ Trợ Khách Hàng</a><br>
+			<a href="member.html">Hệ Thống Member</a><br>
+			<a href="baoquan.html">Hướng Dẫn Bảo Quản</a>
+		</div>
+		<div class="address">
+			<h1>Địa Chỉ</h1>
+			<i class="fas fa-map-market-alt mr-1">HN: 792 Đường Láng - Dist.Đống Đa</i><br>
+			<i class="fas fa-map-market-alt mr-1">SG: 190a Huỳnh Văn Bánh - Dist. Phú Nhuận</i><br>
+			<i class="fas fa-map-market-alt mr-1">CT: 15 Nguyễn Việt Hồng, Q. Ninh Kiều</i><br>
+			<i class="fas fa-map-market-alt mr-1">ĐN: 126 Lê Duẩn, Q. Hải Châu</i><br>
+		</div>
+	</div>
+	<div class="copyright">
+		<p style="color: #333">Copyright © 2020 HSTL. All rights reserved.</p>
+	</div>
+</body>
+</html>

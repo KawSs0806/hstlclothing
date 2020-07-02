@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đây là web test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<!-- style -->
+	<link rel="stylesheet" type="text/css" href="styles/solax.css">
+
+	<!-- owlcarousel -->
+	<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css"> 
+	<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+	<!-- css bootstrap 4 -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		/*========================reset CSS=======================*/		/*--------(khuyên dùng)-------------*/
+		*{
+			margin: 0;
+			padding: 0;
+		}	
+
+		/*===========================start nav-bar=============================*/
+		.nav-bar{
+			background-color: #000000;
+			padding-left: 0%;
+		}
+
+		#navbar-collapse-main li{
+			list-style-type: none;
+			/*color: #ffffff;*/
+			font-size: 20px;
+			position: relative;	
+			display: inline-block;
+			width: 120px;
+			height: 30px;
+			line-height: 30px;		
+		}
+
+		#navbar-collapse-main li a{
+			color: #ffffff;
+			font-family: sans-serif;
+			font-size: 13px;
+			display: block;
+			text-align: center;
+		}
+
+		#navbar-collapse-main li a:hover{
+			background-color: #ffffff;
+			color: red;
+			text-decoration: none;
+		}
+
+		#navbar-collapse-main li #sub-manunf{
+			display: none;
+			position: absolute;
+			color: #000000;
+		}
+
+		#navbar-collapse-main li:hover #sub-manunf{
+			display: block;
+			background-color: #e68a00;
+		}
+
+		#navbar-collapse-main li #sub-search{
+			display: none;
+			position: absolute;
+		}
+
+		#navbar-collapse-main li:hover #sub-search{
+			display: block;
+		}
+
+		.active{
+			background: #e68a00;
+		}
+
+		/*===============================end nav-bar==============================*/
+
+		.logo{
+			background-color: black;
+			text-align: center;
+		}
+
+		/*================================start main=============================*/
+
+
+
+		/*=================================end main==================================*/
+
+
+
+		/*=================================start footer=============================*/
+
+		.footer{
+			background-color: #000000;
+			display: flex;
+		}
+
+		.footer img{
+			width: 200px;
+			height: 100px;
+			padding-right: 40px;
+		}
+
+		.footer h1{
+			color: #e68a00;
+		}
+
+		.contact{
+			padding-right: 300px;
+		}
+
+		.scontact{
+			margin: 0;
+			padding: 0;
+		}
+
+		.scontact li{
+			font-size: 40px;
+			list-style: none;
+			padding-left: 20px;
+		}
+
+		.scontact li a{
+			color: #ffffff;
+			font-size: 20px;
+			text-decoration: none;
+		}
+
+		.scontact li a:hover{
+			color: #e68a00;
+		}
+
+		.policy{
+			padding-right: 400px;
+		}
+
+		.policy a{
+			text-decoration: none;
+			color: #ffffff;
+			font-size: 16px;
+		}
+
+		.policy a:hover{
+			color: #e68a00;
+		}
+
+		.address i{
+			color: #ffffff;
+			font-size: 16px;
+		}
+
+		.copyright{
+			text-align: center;
+			color: #ffffff;
+			background-color: black;
+			font-size: 16px;
+			height: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="nav-bar">
+		<div class="container-fluid">
+
+<!---------------------------------------MENU--------------------------------------------------->
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-9">
+					<ul class="nav nav-bar navbar-right" id="navbar-collapse-main">
+						<li><a class="active" href="index.html"><span><i class="fas fa-home mr-1"></i></span>Trang Chủ</a></li>
+
+						<li>
+							<a href="#"><span><i class="fas fa-search mr-1"></i></span>Tìm Kiếm</a>
+							<ul id="sub-search">
+								<li>
+									<input type="search" placeholder="Tìm kiếm..." style="width: 150px; height: 30px; color: #000000; font-size: 10px;">
+								</li>
+							</ul>
+						</li>
+
+						<li><a href="#"><span><i class="fas fa-tshirt mr-1"></i></span>Sản Phẩm</a>
+							<ul id="sub-manunf">
+								<li><a href="ao.html">Áo</a></li>
+								<li><a href="quan.html">Quần</a></li>
+								<li><a href="phukien.html">Phụ Kiện</a></li>
+								<li><a href="#">__________</a></li>
+							</ul>
+						</li>
+
+
+
+						<li>
+							<a href="cart.html"><span><i class="fas fa-cart-plus mr-1"></i></span>Giỏ Hàng</a>	
+						</li>
+						
+						<li><a href="sign.html"><span><i class="fas fa-users mr-1"></i></span>Đăng Nhập</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!----------------------------------LOGO--------------------------------->
+	<div class="logo">
+		<a href="index.html"><img src="images/logo.png"></a>
+	</div>
+	<br>
+
+<!--------------------------------------------MAIN------------------------------------------------>
+	<div class="container">
+		<div class="textmain" style="font-size: 20px;">
+			<h2>Hướng dẫn Bảo Quản sản phẩm của HSTL Clothing</h2>
+			<p>[Sản phẩm Áo Thun]</p>
+				<p>Tất cả Áo thun tại HSTL Clothing đều được sử dụng Cotton 100% Thun 4 chiều Co giãn, nhưng không bị xù lông, rút hoặc bị giãn vải nhé. Nhưng sẽ cũ theo năm tháng, điều này ai cũng biết vì không có Sản phẩm nào mới mãi mãi.</p>
+				<p>Khi bạn cầm trên tay chiếc áo mới, bạn đừng giặt ngay vội mà hãy mặc 1 lần và để 2-3 ngày sau rồi Ngâm Nước lạnh 30 – 2h ngày rồi hãy giặt. Vì mực in còn rất mới, chưa thể khô và bám chắc vào áo được. Nếu bạn vội vàng đem áo đi giặt ngay thì hình in sẽ dễ bị mờ và nhoè. Tất cả Sản phẩm của HSTL Clothing đều có thể giặt máy, nhưng trước khi giặt máy Quý khách nên đọc phần ở trên ngâm nước lạnh 30p – 2h trước khi giặt máy nhé. Nên lộn ngược mặt áo trong ra ngoài khi giặt sẽ giúp áo của Quý Khách bền hơn rất nhiều đó.</p>
+				<p>Tất cả Chất liệu Cotton đều dệt từ màu trắng ra, nên nếu áo có ra màu thì đây là điều bình thường. Khi bạn giặt 2-3 nước thì màu nhuộm bên ngoài sẽ hết</p>
+				<p>Đối với Sản phẩm Phản Quang [ FLASH ], Quý Khách không nên Giặt máy vì chất liệu phản quang được phủ lên. Quý Khách nên Giặt Tay để tránh tình Trạng bị Tróc Phản Quang</p>
+				<p>Quý khách không được ủi đồ ở nhiệt độ quá cao với phần in của chất liệu, như vậy sẽ làm phần in bị nóng và bị chảy.</p>
+				<p>Quý Khách treo áo nên đưa móc từ đáy áo lên cổ áo, như vậy sẽ không làm giãn cổ áo.</p><br>
+
+
+			<p>[Sản phẩm Quần Jeans]</p>
+				<p>Để màu đồ Jeans được bền, đẹp, và không phai màu thì khi mua về, quý khách nên Ngâm quần với nước lạnh kèm ít muối đậm trong 12h – 24h đồng hồ.</p>
+				<ul>
+					<li>Lưu ý khi giặt Jeans các bạn nên nhớ lấy hết vật dụng trong túi ra và lộn trái quần rồi mới giặt</li>
+					<li>Bạn cần phải biết rằng, giặt bằng máy sẽ làm đồ jeans nhanh hỏng và nhanh phai màu hơn rất nhiều Còn nếu giặt quần áo jean trong máy, thì cần lộn trái đồ, kéo tất cả phéc mơ tuya và cài các cúc lại.</li>
+					<li>Mẹo đơn giản nhất để bảo quản đồ jeans chính là làm lạnh chúng. Bằng cách này, bạn sẽ tránh được việc giặt quá nhiều đồ jeans cùng một lúc. Bước đầu tiên hãy giũ sạch các túi của quần áo trước khi giặt. Sau đó, hãy trải thẳng đồ, gấp lại và đặt vào túi nhựa trong máy làm lạnh đến ngày tiếp theo bạn muốn mặc chúng.</li>
+				</ul><br>
+
+
+			<p>[Sản phẩm Hoodie và Sweater vải Nỉ Bông]</p>
+				<ol>
+					<li>Khi bạn cầm trên tay chiếc áo mới, bạn đừng giặt ngay vội mà hãy ngâm vào nước lạnh 30p – 2h rồi hãy giặt. Vì mực in còn rất mới, chưa thể khô và bám chắc vào áo được. Nếu bạn vội vàng đem áo đi giặt ngay thì hình in sẽ dễ bị mờ và nhoè.</li>
+					<li>Lần giặt đầu tiên bạn hãy vò tay, giặt bằng nước lã và không có xà phòng.</li>
+					<li>Các lần giặt sau bạn giặt bình thường, tốt nhất không giặt bằng máy, tuyệt đối không đổ xà phòng và thuốc tẩy trực tiếp vào hình in.</li>
+					<li>Không ngâm áo trong xà phòng quá lâu cùng với những áo khác màu.</li>
+					<li>Bạn nên lộn trái áo khi phơi dưới ánh nắng mặt trời. Cách phơi này giúp cho màu sắc của áo luôn tươi mới, không bị bạc màu.</li>
+					<li>Với áo có nhiều hình in, bạn không nên gập 2 mặt in vào nhau, tốt nhất bạn nên gập làm đôi và dùng móc để treo.</li>
+					<li>Khi sử dụng bàn là bạn nên lộn trái áo, không để nhiệt độ bàn là quá cao.</li>
+					<li>Chất liệu Nỉ Bông đặc thù là sẽ bám lông trên áo ở trong, bạn chỉ cần giặt 2-3 nước thì tình trạng sẽ giảm lên đến 80%</li>
+				</ol>
+
+				<p>Các bước bảo quản rất đơn giãn và dễ thực hiện. Quý khách nên nhớ để bảo quản các Sản phẩm Quần – Áo của mình được tốt nhất nhé.</p>
+				<p>Thank you...!</p>
+		</div>
+	</div>
+
+
+
+<!----------------------------------------FOOTER----------------------------------->
+	<div class="footer">
+		<div>
+			<img src="images/logo.png">
+		</div>
+		<div class="contact">
+			<h1>Liên Hệ</h1>
+			<ul class="scontact">
+				<li>
+					<a href="https://www.facebook.com/nobisu.kunny/"><i class="fab fa-facebook-square mr-1"></i>HSTL Club</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/hstlvnvlub/"><i class="fab fa-instagram mr-1"></i>hstlvnclub</a>
+				</li>
+				<li>
+					<a href=""><i class="fas fa-phone-square-alt mr-1"></i>098988888</a>
+				</li>
+			</ul>
+		</div>
+		<div class="policy">
+			<h1>Chính Sách</h1>
+			<a href="#">Chính Sách Bảo Hành</a><br>
+			<a href="baomat.html">Chính Sách Bảo Mật</a><br>
+			<a href="member.html">Hệ Thống Member</a>
+		</div>
+		<div class="address">
+			<h1>Địa Chỉ</h1>
+			<i class="fas fa-map-market-alt mr-1">HN: 792 Đường Láng - Dist.Đống Đa</i><br>
+			<i class="fas fa-map-market-alt mr-1">SG: 190a Huỳnh Văn Bánh - Dist. Phú Nhuận</i><br>
+			<i class="fas fa-map-market-alt mr-1">CT: 15 Nguyễn Việt Hồng, Q. Ninh Kiều</i><br>
+			<i class="fas fa-map-market-alt mr-1">ĐN: 126 Lê Duẩn, Q. Hải Châu</i><br>
+		</div>
+	</div>
+	<div class="copyright">
+		<p style="color: #333">Copyright © 2020 HSTL. All rights reserved.</p>
+	</div>
+</body>
+</html>

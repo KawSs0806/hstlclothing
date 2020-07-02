@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đây là web test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<!-- style -->
+	<link rel="stylesheet" type="text/css" href="styles/solax.css">
+
+	<!-- owlcarousel -->
+	<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css"> 
+	<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+	<!-- css bootstrap 4 -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		/*========================reset CSS=======================*/		/*--------(khuyên dùng)-------------*/
+		*{
+			margin: 0;
+			padding: 0;
+		}	
+
+		/*===========================start nav-bar=============================*/
+		.nav-bar{
+			background-color: #000000;
+			padding-left: 0%;
+		}
+
+		#navbar-collapse-main li{
+			list-style-type: none;
+			/*color: #ffffff;*/
+			font-size: 20px;
+			position: relative;	
+			display: inline-block;
+			width: 120px;
+			height: 30px;
+			line-height: 30px;		
+		}
+
+		#navbar-collapse-main li a{
+			color: #ffffff;
+			font-family: sans-serif;
+			font-size: 13px;
+			display: block;
+			text-align: center;
+		}
+
+		#navbar-collapse-main li a:hover{
+			background-color: #ffffff;
+			color: red;
+			text-decoration: none;
+		}
+
+		#navbar-collapse-main li #sub-manunf{
+			display: none;
+			position: absolute;
+			color: #000000;
+		}
+
+		#navbar-collapse-main li:hover #sub-manunf{
+			display: block;
+			background-color: #e68a00;
+		}
+
+		#navbar-collapse-main li #sub-search{
+			display: none;
+			position: absolute;
+		}
+
+		#navbar-collapse-main li:hover #sub-search{
+			display: block;
+		}
+
+		.active{
+			background: #e68a00;
+		}
+
+		/*===============================end nav-bar==============================*/
+
+		.logo{
+			background-color: black;
+			text-align: center;
+		}
+
+		/*================================start main=============================*/
+
+
+
+		/*=================================end main==================================*/
+
+
+
+		/*=================================start footer=============================*/
+
+		.footer{
+			background-color: #000000;
+			display: flex;
+		}
+
+		.footer img{
+			width: 200px;
+			height: 100px;
+			padding-right: 40px;
+		}
+
+		.footer h1{
+			color: #e68a00;
+		}
+
+		.contact{
+			padding-right: 300px;
+		}
+
+		.scontact{
+			margin: 0;
+			padding: 0;
+		}
+
+		.scontact li{
+			font-size: 40px;
+			list-style: none;
+			padding-left: 20px;
+		}
+
+		.scontact li a{
+			color: #ffffff;
+			font-size: 20px;
+			text-decoration: none;
+		}
+
+		.scontact li a:hover{
+			color: #e68a00;
+		}
+
+		.policy{
+			padding-right: 400px;
+		}
+
+		.policy a{
+			text-decoration: none;
+			color: #ffffff;
+			font-size: 16px;
+		}
+
+		.policy a:hover{
+			color: #e68a00;
+		}
+
+		.address i{
+			color: #ffffff;
+			font-size: 16px;
+		}
+
+		.copyright{
+			text-align: center;
+			color: #ffffff;
+			background-color: black;
+			font-size: 16px;
+			height: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="nav-bar">
+		<div class="container-fluid">
+
+<!---------------------------------------MENU--------------------------------------------------->
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-9">
+					<ul class="nav nav-bar navbar-right" id="navbar-collapse-main">
+						<li><a class="active" href="index.html"><span><i class="fas fa-home mr-1"></i></span>Trang Chủ</a></li>
+
+						<li>
+							<a href="#"><span><i class="fas fa-search mr-1"></i></span>Tìm Kiếm</a>
+							<ul id="sub-search">
+								<li>
+									<input type="search" placeholder="Tìm kiếm..." style="width: 150px; height: 30px; color: #000000; font-size: 10px;">
+								</li>
+							</ul>
+						</li>
+
+						<li><a href="#"><span><i class="fas fa-tshirt mr-1"></i></span>Sản Phẩm</a>
+							<ul id="sub-manunf">
+								<li><a href="ao.html">Áo</a></li>
+								<li><a href="quan.html">Quần</a></li>
+								<li><a href="phukien.html">Phụ Kiện</a></li>
+								<li><a href="#">__________</a></li>
+							</ul>
+						</li>
+
+						
+
+						<li>
+							<a href="cart.html"><span><i class="fas fa-cart-plus mr-1"></i></span>Giỏ Hàng</a>	
+						</li>
+						
+						<li><a href="sign.html"><span><i class="fas fa-users mr-1"></i></span>Đăng Nhập</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!----------------------------------LOGO--------------------------------->
+	<div class="logo">
+		<a href="index.html"><img src="images/logo.png"></a>
+	</div>
+	<br>
+
+<!--------------------------------------------MAIN------------------------------------------------>
+	<div class="container">
+		<div class="textmain" style="font-size: 20px;">
+			<h2>Mục đích và phạm vi thu thập</h2>
+			<p>Việc thu thập dữ liệu chủ yếu trên website hstlclothing.vn bao gồm: họ tên, email, điện thoại, địa chỉ khách hàng trong mục liên hệ. Đây là các thông tin mà SLY cần thành viên cung cấp bắt buộc khi gửi thông tin nhờ tư vấn hay muốn mua sản phẩm và để slyclothing.vn liên hệ xác nhận lại với khách hàng trên website nhằm đảm bảo quyền lợi cho cho người tiêu dùng.</p>
+
+			<p>Các thành viên sẽ tự chịu trách nhiệm về bảo mật và lưu giữ mọi hoạt động sử dụng dịch vụ dưới thông tin mà mình cung cấp và hộp thư điện tử của mình. Ngoài ra, thành viên có trách nhiệm thông báo kịp thời cho webiste hstlclothing.vn về những hành vi sử dụng trái phép, lạm dụng, vi phạm bảo mật, lưu giữ tên đăng ký và mật khẩu của bên thứ ba để có biện pháp giải quyết phù hợp.</p>
+
+
+			<h2>Phạm vi sử dụng thông tin</h2>
+			<p>Công ty sử dụng thông tin thành viên cung cấp để:</p>
+			<ul>
+				<li> Liên hệ xác nhận đơn hàng và giao hàng cho thành viên khi nhận được yêu cầu từ thành viên.</li>
+				<li>Gửi email tiếp thị, khuyến mại về hàng hóa do chúng tôi bán.</li>
+				<li>Gửi các thông báo về các hoạt động trao của website hstlclothing.vn</li>
+				<li>Liên lạc và giải quyết với người dùng trong những trường hợp đặc biệt.</li>
+				<li>Không sử dụng thông tin cá nhân của người dùng ngoài mục đích xác nhận và liên hệ có liên quan đến giao dịch tại Cửa hàng.</li>
+			</ul>
+			<p>– Khi có yêu cầu của cơ quan tư pháp bao gồm: Viện kiểm sát, tòa án, cơ quan công an điều tra liên quan đến hành vi vi phạm pháp luật nào đó của khách hàng.</p>
+
+			<h2>Thời gian lưu trữ thông tin</h2>
+			<p>Dữ liệu cá nhân của thành viên sẽ được lưu trữ cho đến khi có yêu cầu ban quản trị hủy bỏ. Còn lại trong mọi trường hợp thông tin cá nhân thành viên sẽ được bảo mật trên máy chủ của hstlclothing.vn</p>
+
+			<h1>Công ty TNHH Thương Mại và Dịch vụ HSTL</h1>
+			<h1>Mã số thuế: 88888888</h1>
+
+			<p>Địa chỉ của đơn vị thu thập và quản lý thông tin cá nhân</p>
+			<p>190a Huỳnh Văn Bánh - Dist. Phú Nhuận</p>
+			<p>Hotline: 0989 888 888 – Email: hstlclothing.hn@gmail.com</p>
+
+			<h2>Phương tiện và công cụ để người dùng tiếp cận và chỉnh sửa dữ liệu cá nhân của mình.</h2>
+			<p>Thành viên có quyền tự kiểm tra, cập nhật, điều chỉnh hoặc hủy bỏ thông tin cá nhân của mình bằng cách liên hệ với ban quản trị website hstlclothing.vn thực hiện việc này.</p>
+			<p>Thành viên có quyền gửi khiếu nại về nội dung bảo mật thông tin đề nghị liên hệ Ban quản trị của website hstlclothing.vn. Khi tiếp nhận những phản hồi này, hstlclothing.vn sẽ xác nhận lại thông tin, trường hợp đúng như phản ánh của thành viên tùy theo mức độ, HSTL sẽ có những biện pháp xử lý kịp thời.</p>
+
+			<h2>Cam kết bảo mật thông tin cá nhân khách hàng</h2>
+			<p>Thông tin cá nhân của thành viên trên hstlclothing.vn được hstlclothing.vn cam kết bảo mật tuyệt đối theo chính sách bảo vệ thông tin cá nhân của khách hàng. Việc thu thập và sử dụng thông tin của mỗi thành viên chỉ được thực hiện khi có sự đồng ý của khách hàng đó trừ những trường hợp pháp luật có quy định khác.</p>
+			<p>Không sử dụng, không chuyển giao, cung cấp hay tiết lộ cho bên thứ 3 nào về thông tin cá nhân của thành viên khi không có sự cho phép đồng ý từ thành viên.</p>
+			<p>Trong trường hợp máy chủ lưu trữ thông tin bị hacker tấn công dẫn đến mất mát dữ liệu cá nhân thành viên, hstlclothing.vn sẽ có trách nhiệm thông báo vụ việc cho cơ quan chức năng điều tra xử lý kịp thời và thông báo cho thành viên được biết.</p>
+			<p>Bảo mật tuyệt đối mọi thông tin giao dịch trực tuyến của thành viên bao gồm thông tin hóa đơn kế toán chứng từ số hóa trên hstlclothing.vn</p>
+			<p>Ban quản lý hstlclothing.vn yêu cầu các cá nhân khi đăng ký/mua hàng phải cung cấp đầy đủ thông tin cá nhân có liên quan như: Họ và tên, địa chỉ liên lạc, email, điện thoại,…., và chịu trách nhiệm về tính pháp lý của những thông tin trên. Ban quản lý hstlclothing.vn không chịu trách nhiệm cũng như không giải quyết mọi khiếu nại có liên quan đến quyền lợi của thành viên đó nếu xét thấy tất cả thông tin cá nhân của thành viên đó cung cấp khi đăng ký ban đầu là không chính xác.</p>
+		</div>
+	</div>
+
+
+
+<!----------------------------------------FOOTER----------------------------------->
+	<div class="footer">
+		<div>
+			<img src="images/logo.png">
+		</div>
+		<div class="contact">
+			<h1>Liên Hệ</h1>
+			<ul class="scontact">
+				<li>
+					<a href="https://www.facebook.com/nobisu.kunny/"><i class="fab fa-facebook-square mr-1"></i>HSTL Club</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/hstlvnvlub/"><i class="fab fa-instagram mr-1"></i>hstlvnclub</a>
+				</li>
+				<li>
+					<a href=""><i class="fas fa-phone-square-alt mr-1"></i>098988888</a>
+				</li>
+			</ul>
+		</div>
+		<div class="policy">
+			<h1>Chính Sách</h1>
+			<a href="baohanh.html">Chính Sách Bảo Hành</a><br>
+			<a href="baomat.html">Chính Sách Bảo Mật</a><br>
+			<a href="member.html">Hệ Thống Member</a><br>
+			<a href="baoquan.html">Hướng Dẫn Bảo Quản</a>
+		</div>
+		<div class="address">
+			<h1>Địa Chỉ</h1>
+			<i class="fas fa-map-market-alt mr-1">HN: 792 Đường Láng - Dist.Đống Đa</i><br>
+			<i class="fas fa-map-market-alt mr-1">SG: 190a Huỳnh Văn Bánh - Dist. Phú Nhuận</i><br>
+			<i class="fas fa-map-market-alt mr-1">CT: 15 Nguyễn Việt Hồng, Q. Ninh Kiều</i><br>
+			<i class="fas fa-map-market-alt mr-1">ĐN: 126 Lê Duẩn, Q. Hải Châu</i><br>
+		</div>
+	</div>
+	<div class="copyright">
+		<p style="color: #333">Copyright © 2020 HSTL. All rights reserved.</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đây là web test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<!-- style -->
+	<link rel="stylesheet" type="text/css" href="styles/solax.css">
+
+	<!-- owlcarousel -->
+	<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css"> 
+	<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+	<!-- css bootstrap 4 -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		/*========================reset CSS=======================*/		/*--------(khuyên dùng)-------------*/
+		*{
+			margin: 0;
+			padding: 0;
+		}	
+
+		/*===========================start nav-bar=============================*/
+		.nav-bar{
+			background-color: #000000;
+			padding-left: 0%;
+		}
+
+		#navbar-collapse-main li{
+			list-style-type: none;
+			/*color: #ffffff;*/
+			font-size: 20px;
+			position: relative;	
+			display: inline-block;
+			width: 120px;
+			height: 30px;
+			line-height: 30px;		
+		}
+
+		#navbar-collapse-main li a{
+			color: #ffffff;
+			font-family: sans-serif;
+			font-size: 13px;
+			display: block;
+			text-align: center;
+		}
+
+		#navbar-collapse-main li a:hover{
+			background-color: #ffffff;
+			color: red;
+			text-decoration: none;
+		}
+
+		#navbar-collapse-main li #sub-manunf{
+			display: none;
+			position: absolute;
+			color: #000000;
+		}
+
+		#navbar-collapse-main li:hover #sub-manunf{
+			display: block;
+			background-color: #e68a00;
+		}
+
+		#navbar-collapse-main li #sub-search{
+			display: none;
+			position: absolute;
+		}
+
+		#navbar-collapse-main li:hover #sub-search{
+			display: block;
+		}
+
+		.active{
+			background: #e68a00;
+		}
+
+		/*===============================end nav-bar==============================*/
+
+		.logo{
+			background-color: black;
+			text-align: center;
+		}
+
+		/*================================start main=============================*/
+
+
+
+		/*=================================end main==================================*/
+
+
+
+		/*=================================start footer=============================*/
+
+		.footer{
+			background-color: #000000;
+			display: flex;
+		}
+
+		.footer img{
+			width: 200px;
+			height: 100px;
+			padding-right: 40px;
+		}
+
+		.footer h1{
+			color: #e68a00;
+		}
+
+		.contact{
+			padding-right: 300px;
+		}
+
+		.scontact{
+			margin: 0;
+			padding: 0;
+		}
+
+		.scontact li{
+			font-size: 40px;
+			list-style: none;
+			padding-left: 20px;
+		}
+
+		.scontact li a{
+			color: #ffffff;
+			font-size: 20px;
+			text-decoration: none;
+		}
+
+		.scontact li a:hover{
+			color: #e68a00;
+		}
+
+		.policy{
+			padding-right: 400px;
+		}
+
+		.policy a{
+			text-decoration: none;
+			color: #ffffff;
+			font-size: 16px;
+		}
+
+		.policy a:hover{
+			color: #e68a00;
+		}
+
+		.address i{
+			color: #ffffff;
+			font-size: 16px;
+		}
+
+		.copyright{
+			text-align: center;
+			color: #ffffff;
+			background-color: black;
+			font-size: 16px;
+			height: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="nav-bar">
+		<div class="container-fluid">
+
+<!---------------------------------------MENU--------------------------------------------------->
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-9">
+					<ul class="nav nav-bar navbar-right" id="navbar-collapse-main">
+						<li><a class="active" href="index.html"><span><i class="fas fa-home mr-1"></i></span>Trang Chủ</a></li>
+
+						<li>
+							<a href="#"><span><i class="fas fa-search mr-1"></i></span>Tìm Kiếm</a>
+							<ul id="sub-search">
+								<li>
+									<input type="search" placeholder="Tìm kiếm..." style="width: 150px; height: 30px; color: #000000; font-size: 10px;">
+								</li>
+							</ul>
+						</li>
+
+						<li><a href="#"><span><i class="fas fa-tshirt mr-1"></i></span>Sản Phẩm</a>
+							<ul id="sub-manunf">
+								<li><a href="ao.html">Áo</a></li>
+								<li><a href="quan.html">Quần</a></li>
+								<li><a href="phukien.html">Phụ Kiện</a></li>
+								<li><a href="#">__________</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="cart.html"><span><i class="fas fa-cart-plus mr-1"></i></span>Giỏ Hàng</a>	
+						</li>
+						
+						<li><a href="sign.html"><span><i class="fas fa-users mr-1"></i></span>Đăng Nhập</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!----------------------------------LOGO--------------------------------->
+	<div class="logo">
+		<a href="index.html"><img src="images/logo.png"></a>
+	</div>
+	<br>
+
+<!--------------------------------------------MAIN------------------------------------------------>
+	<div class="container">
+		<div class="textmain" style="font-size: 20px;">
+			<h2>1. QUYỀN LỢI MEMBER ONLINE TẠI HSTL</h2>
+			<p>Sau khi tài khoản quý khách được tạo tại hstlclothing.vn sẽ được tặng ngay 100.000 VNĐ tương đương với 1 HSTL point trong tài khoản Member Online.</p>
+
+			<p>Các Level và Ưu đãi theo Level Hiện hành dành cho MEMBER ONLINE <b>(1 Hstl Point = 100k)</b></p>
+
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Level</th>
+						<th>Bronze Member</th>
+						<th>Silver Member</th>
+						<th>Gold Member</th>
+						<th>Diamond Member</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>HSTL Points</td>
+						<td>5-39</td>
+						<td>40-99</td>
+						<td>100-199</td>
+						<td>Trên 200</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<td>Discount</td>
+						<td>5%</td>
+						<td>10%</td>
+						<td>15%</td>
+						<td>20%</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>Với Hình thức Đăng ký MEMBER ONLINE ngay tại Website www.hstlclothing.vn hoặc sau khi mua hàng trực tiếp tại cửa hàng, quý khách sẽ được giảm ngay 5% sau khi mua bill đầu tiên trên 5 điểm (tương đương với Level Brozen) và những lần mua hàng kế tiếp cho đến khi Up Level Member kế tiếp.</p>
+			<p>Điểm HSTL Point sẽ được làm tròn (trên 50k sẽ làm tròn = 1 HSTL Point, dưới 50k sẽ làm tròn = 0 HSTL Point)</p>
+
+			<h2>**Lưu ý:</h2>
+					<ul>
+						<li>Mỗi cuối ngày hệ thống sẽ cập nhật và nâng cấp Level cho Member.</li>
+						<li>Ưu đãi Event: Tùy theo chương trình Event hiện hành mà giá trị DISCOUNT của MEMBER sẽ có thay đổi và được thông báo theo từng Event.</li>
+						<li>Nếu Quý Khách Mua ONLINE bằng SĐT đã mua OFFLINE trước đây thì điểm vẫn sẽ được tích vào tài khoản OFFLINE (thêm thông tin member offline tại đây).</li>
+					</ul>
+
+
+			<h2>2. ĐIỀU KIỆN SỬ DỤNG MEMBER ONLINE HSTL</h2>
+				<ul>
+					<li>Mã số MEMBER ONLINE được cấp miễn phí cho các khách hàng đăng ký MEMBER ONLINE qua Website: www.hstlclothing.vn</li>
+					<li>Khách hàng cung cấp thông tin cá nhận theo bảng hướng dẫn Đăng ký Member</li>
+					<li>Member được sử dụng khi mua hàng trên 5 điểm cho đến khi Up Level và Giá trị Ưu đãi sẽ tăng theo.</li>
+					<li>Vui lòng Đăng nhập Tài khoản MEMBER ONLINE đã đăng ký để được hưởng ưu đãi, nếu quý khách mua hàng OFFLINE sẽ được nhân viên thông báo về số điểm sau khi mua hàng xong</li>
+					<li>Với Tài khoản MEMBER ONLINE chỉ Áp dụng cho hình thức mua tại Website, còn hình thức mua hàng tại cửa hàng quý khách có thể tham khảo ở MEMBER OFFLINE.</li>
+					<li>Nếu quý khách mua hàng ONLINE & OFFLINE trên cùng 1 số điện thoại, thì số điểm sẽ được tích cộng dồn cho OFFLINE (Còn riêng tài khoản MEMBER ONLINE sẽ được tính riêng khi đặt trên Website) Ví dụ: Bạn mua ONLINE 1.000.000 và mua OFFLINE 1.000.000 thì tài khoản ONLINE sẽ có 10 điểm, nhưng tài khoản OFFLINE sẽ có 20 điểm</li>
+				</ul>
+
+			<h2>3. CÁC ĐIỀU KHOẢN KHÁC</h2>
+				<ul>
+					<li>HSTL có quyền thay đổi các điều kiện, điều khoản và nội dung chương trình MEMBER CARD bất cứ lúc nào mà không cần báo trước. Mọi sự thay đổi (Nếu có) sẽ được đăng lên trang chủ www.hstlclothing.vn và các trang cộng đồng của HSTL.</li>
+					<li>Miễn Phí Ship toàn quốc tùy theo sự kiện sẽ có sự thay đổi trên từng sự kiện khác nhau.</li>
+				</ul>
+
+			<h2>Nếu Quý khách có thắc mắc liên quan đến Quy định và các Ưu đãi trên thẻ, hãy liên hệ 0989.888.888 để được Tư Vấn tốt nhất.</h2>
+
+		</div>
+	</div>
+
+
+
+<!----------------------------------------FOOTER----------------------------------->
+	<div class="footer">
+		<div>
+			<img src="images/logo.png">
+		</div>
+		<div class="contact">
+			<h1>Liên Hệ</h1>
+			<ul class="scontact">
+				<li>
+					<a href="https://www.facebook.com/nobisu.kunny/"><i class="fab fa-facebook-square mr-1"></i>HSTL Club</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/hstlvnvlub/"><i class="fab fa-instagram mr-1"></i>hstlvnclub</a>
+				</li>
+				<li>
+					<a href=""><i class="fas fa-phone-square-alt mr-1"></i>098988888</a>
+				</li>
+			</ul>
+		</div>
+		<div class="policy">
+			<h1>Chính Sách</h1>
+			<a href="#">Chính Sách Bảo Hành</a><br>
+			<a href="baomat.html">Chính Sách Bảo Mật</a><br>
+			<a href="member.html">Hệ Thống Member</a><br>
+			<a href="baoquan.html">Hướng Dẫn Bảo Quản</a>
+		</div>
+		<div class="address">
+			<h1>Địa Chỉ</h1>
+			<i class="fas fa-map-market-alt mr-1">HN: 792 Đường Láng - Dist.Đống Đa</i><br>
+			<i class="fas fa-map-market-alt mr-1">SG: 190a Huỳnh Văn Bánh - Dist. Phú Nhuận</i><br>
+			<i class="fas fa-map-market-alt mr-1">CT: 15 Nguyễn Việt Hồng, Q. Ninh Kiều</i><br>
+			<i class="fas fa-map-market-alt mr-1">ĐN: 126 Lê Duẩn, Q. Hải Châu</i><br>
+		</div>
+	</div>
+	<div class="copyright">
+		<p style="color: #333">Copyright © 2020 HSTL. All rights reserved.</p>
+	</div>
+</body>
+</html>
